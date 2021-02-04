@@ -1,0 +1,258 @@
+/* ------------- Custom Properties ------------- */
+
+:root {
+    --colorFondo: rgb(223, 244, 255);
+    --oscuroMate: #545454;
+}
+
+
+/* --------------- General -------------- */
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 70rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 2rem;
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+.lq-espero ul li {
+    color: #000;
+}
+
+.centrar {
+    margin: 0 auto;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+nav a {
+    margin-right: 2rem;
+    font-weight: 600;
+    padding: .5rem;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #fff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#daniel-bonifasi {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedor {
+    background-color: var(--colorFondo);
+    border-top: 2rem solid #545454;
+}
+
+
+/*Lettering*/
+
+p#daniel-bonifasi span {
+    position: relative;
+    text-shadow: 0 0 30px #000;
+    font-weight: 900;
+}
+
+@media (min-width: 992px) {
+    .char1 {
+        top: 2rem;
+        right: 1rem;
+    }
+    .char3 {
+        top: 2rem;
+        left: 0;
+    }
+    .char5 {
+        top: -2rem;
+        left: .5rem;
+    }
+    .char7 {
+        top: 1rem;
+        right: 1rem;
+    }
+    .char9 {
+        bottom: 1rem;
+    }
+    .char11 {
+        top: -1.5rem;
+    }
+    .char13 {
+        bottom: -2rem;
+    }
+    .char15 {
+        bottom: -1rem;
+        left: -.5rem;
+    }
+    .char17 {
+        top: 2rem;
+    }
+    .char19 {
+        top: -2rem;
+    }
+    .char21 {
+        right: 1rem;
+    }
+    .char23 {
+        right: 4rem;
+    }
+    .char25 {
+        top: 3rem;
+        left: -1.5rem;
+    }
+    .char27 {
+        top: -3rem;
+    }
+    .char29 {
+        bottom: -2rem;
+    }
+}
+
+p#daniel-bonifasi.nombre-descrip span {
+    text-shadow: 0 0 30px #fff;
+}
+
+
+/* ----------- Home -----------*/
+
+
+/* Parallax */
+
+.header {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-image: url(/img/parallaxInicio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header-descripcion {
+    background-image: url(/img/parallaxDescripcion.jpg);
+    color: #fff;
+}
+
+.header-home {
+    width: 100%;
+    max-width: 170rem;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 768px) {
+    .header-home {
+        justify-content: end;
+    }
+}
+
+.navegacion {
+    padding: 2rem 4rem;
+}
+
+.titulo {
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion {
+    max-width: 120rem;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    text-align: justify;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: var(--oscuroMate);
+}
+
+.footer {
+    max-width: 50rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+
+/* -------- Descripcion -------- */
+
+.a-descrip a:hover {
+    font-weight: 900;
+    color: #000;
+}
+
+.foldUnfold {
+    -webkit-animation: foldUnfold 2000ms linear both;
+    animation: foldUnfold 2000ms linear both;
+}
+
+.splat {
+    -webkit-animation: splat 865ms linear both;
+    animation: splat 865ms linear both;
+}
