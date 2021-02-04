@@ -75,9 +75,10 @@ a {
 
 nav a {
     margin-right: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     padding: .5rem;
     transition: all .5s ease;
+    font-size: 2.5rem;
 }
 
 nav a:hover {
@@ -203,7 +204,7 @@ p#daniel-bonifasi.nombre-descrip span {
 
 @media (min-width: 768px) {
     .header-home {
-        justify-content: end;
+        justify-content: flex-end;
     }
 }
 
